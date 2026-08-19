@@ -1,0 +1,25 @@
+================================================================================
+                   AGENT RESEARCH UPDATE - RAW SOURCE ARCHIVE                   
+================================================================================
+ID:              RES-20260819-0008
+TITLE:           Orbital angular momentum of light and the transformation of Laguerre-Gaussian laser modes
+TYPE:            ACADEMIC_SEARCH
+SOURCE / URL:    https://doi.org/10.1103/physreva.45.8185
+INGESTION TIME:  2026-08-19 16:18:54
+WORD COUNT:      38 words
+CHARACTER COUNT: 298 characters
+EXTRACTION:      Academic Discovery Engine (OpenAlex)
+BYPASS STATUS:   Direct
+================================================================================
+RAW EXTRACTED DATA STREAM BELOW (FULL FIDELITY PRESERVATION):
+================================================================================
+
+Title: Orbital angular momentum of light and the transformation of Laguerre-Gaussian laser modes
+Authors: L. Allen, Marco W. Beijersbergen, R. J. C. Spreeuw, J. P. Woerdman
+Published: 1992
+Summary/Abstract: Cited by 10426 papers. Published in 1992.
+DOI/URL: https://doi.org/10.1103/physreva.45.8185
+
+================================================================================
+                               END OF RAW ARCHIVE                               
+================================================================================

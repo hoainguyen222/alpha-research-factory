@@ -1,0 +1,11 @@
+case_id:
+status: unlocked
+locked_at:
+locked_by:
+source_registry_ref:
+validator_report_ref:
+reproduction_spec_ref:
+backtest_config_ref:
+evaluation_plan_ref:
+notes: []
+

@@ -1,0 +1,121 @@
+================================================================================
+                   AGENT RESEARCH UPDATE - RAW SOURCE ARCHIVE                   
+================================================================================
+ID:              RES-20260818-0004
+TITLE:           Progresses of Machine Learning in Stock Market Prediction A Comprehensive Model
+TYPE:            FILE_PDF
+SOURCE / URL:    FILE:Progresses of Machine Learning in Stock Market Prediction A Comprehensive Model.pdf
+INGESTION TIME:  2026-08-18 15:56:07
+WORD COUNT:      958 words
+CHARACTER COUNT: 12,354 characters
+EXTRACTION:      Corrupted Binary Stream Salvage
+BYPASS STATUS:   Decryption Failed
+================================================================================
+RAW EXTRACTED DATA STREAM BELOW (FULL FIDELITY PRESERVATION):
+================================================================================
+
+--- [Salvaged Text Streams] ---
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+var evt = e ? e : window.event;
+var bt = document.getElementById(buttonid);
+<meta name='citation_title' content='Progresses of Machine Learning in Stock Market Prediction: A Comprehensive Model Comparison' />
+<meta name='citation_conference_title' content='International Conference on Data Analysis and Machine Learning' />
+var theForm = document.forms['form1'];
+<a id="MasterPageHeader_HomeImage" href="HomePage.aspx"><img id="MasterPageHeader_Logotipo" title="Science and Technology Publications" class="imgLogo" src="App_Themes/BookStore/images/scitepress.png" alt="Scitepress Logo" /></a></h1>
+var pageUrl = '/PublicationsDetail.aspx/SaveLogMyInsticc';
+var pageUrl = '/PublicationsDetail.aspx/SaveLogScitepressRegister';
+<input name="ctl00$MasterPageHeader$TextBoxSearch" type="text" value="Search by any title, abstract, authors..." id="MasterPageHeader_TextBoxSearch" class="SearchTextBoxHeaderPage topSearchTextbox" onblur="if(this.value==&#39;&#39;) this.value=&#39;Search by any title, abstract, authors...&#39;;" onfocus="if(this.value == &#39;Search by any title, abstract, authors...&#39;) this.value=&#39;&#39; ;" />
+<input type="submit" name="ctl00$MasterPageHeader$ButtonSearch" value="" onclick="return teste();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MasterPageHeader$ButtonSearch&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MasterPageHeader_ButtonSearch" title="Search by any publication, authors, affiliations field." class="SearchButtonImage" />
+<input type="image" name="ctl00$MasterPageHeader$HelpButton" id="MasterPageHeader_HelpButton" src="App_Themes/BookStore/images/info-sign-th.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MasterPageHeader$HelpButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:20px;width:20px;position: relative; top: -12px; left: 2px;" />
+<div style="padding: 7px 14px !important;">
+The Search is performed on all of the following fields:
+Note: Please use complete words only.
+<div style="padding: 7px 14px !important;">
+If you already have a Primoris Account you can use the same username/password here.
+function RadWindowprompt_detectenter(id, ev, input)
+if (!ev) ev = window.event;
+var but = input.parentNode.parentNode.getElementsByTagName("A")[0];
+else if (but.onclick)
+but.focus(); var click = but.onclick; but.onclick = null; if (click) click.call(but);
+else return true;
+<div id="ctl00_MasterPageHeader_SmallMenu_RadTabStrip1" class="RadTabStripVertical RadTabStrip_Glow RadTabStripLeft_Glow RadTabStripLeft RadTabMenu" style="width: 27%; height: 291px; max-width: 155px;">
+<span id="MasterPageHeader_SmallMenu_CustomValidatorProceedings" style="color:red;font-weight:bold;font-size:13px;margin-left:1px;visibility:hidden;">*Please fill out at least one Field.</span>
+<span id="MasterPageHeader_SmallMenu_cv" style="color:red;font-weight:bold;font-size:13px;visibility:hidden;">*Value must be an number!</span>
+<select name="ctl00$MasterPageHeader$SmallMenu$DropDownListProceedings" id="MasterPageHeader_SmallMenu_DropDownListProceedings" tabindex="1" style="height:27px;width:325px;border: 1px solid rgba(0, 0, 0, 0.4) !important;">
+<option value="Computer Vision, Visualization and Computer Graphics">Computer Vision, Visualization and Computer Graphics</option>
+<option value="Data Engineering ">Data Engineering </option>
+<option value="Energy and Economy">Energy and Economy</option>
+<option value="Enterprise Information Systems">Enterprise Information Systems</option>
+<option value="Health Engineering and Technology Applications">Health Engineering and Technology Applications</option>
+<option value="Informatics in Control, Automation and Robotics">Informatics in Control, Automation and Robotics</option>
+<option value="Information and Systems Security">Information and Systems Security</option>
+<option value="Photonics, Optics and Laser Technology">Photonics, Optics and Laser Technology</option>
+<option value="Simulation and Modeling">Simulation and Modeling</option>
+<option value="Sport Science Research and Technology">Sport Science Research and Technology</option>
+<option value="Web Information Systems and Technologies">Web Information Systems and Technologies</option>
+<a id="MasterPageHeader_SmallMenu_ProAdvSearch" tabindex="1" class="otherButton filterByContextButton" href="AdvancedSearch.aspx?SearchCriteria=Proceedings" style="float: left; padding: 3px 14px;">Advanced Search Proceedings</a>
+<a onclick="return loadingClosePopUp(&#39;ProceedingsSmallMenu&#39;);" id="MasterPageHeader_SmallMenu_ProceedingsSearch" tabindex="1" class="defaultButton filterByContextButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MasterPageHeader$SmallMenu$ProceedingsSearch&quot;, &quot;&quot;, true, &quot;ProceedingsSmallMenu&quot;, &quot;&quot;, false, true))" style="float: none; padding: 6px 14px; margin-left: 134px;"><i class='icon-search' ></i>Search</a>
+<span id="MasterPageHeader_SmallMenu_Label13">If you're looking for an exact phrase use quotation marks on text fields.</span>
+<span id="MasterPageHeader_SmallMenu_CustomValidator1" style="color:red;font-weight:bold;font-size:13px;margin-left:1px;visibility:hidden;">*Please fill out at least one Field.</span>
+<select name="ctl00$MasterPageHeader$SmallMenu$DropDownListPaperField" id="MasterPageHeader_SmallMenu_DropDownListPaperField" tabindex="1" style="height:27px;width:325px;border: 1px solid rgba(0, 0, 0, 0.4) !important;">
+<option value="Computer Vision, Visualization and Computer Graphics">Computer Vision, Visualization and Computer Graphics</option>
+<option value="Data Engineering ">Data Engineering </option>
+<option value="Energy and Economy">Energy and Economy</option>
+<option value="Enterprise Information Systems">Enterprise Information Systems</option>
+<option value="Health Engineering and Technology Applications">Health Engineering and Technology Applications</option>
+<option value="Informatics in Control, Automation and Robotics">Informatics in Control, Automation and Robotics</option>
+<option value="Information and Systems Security">Information and Systems Security</option>
+<option value="Photonics, Optics and Laser Technology">Photonics, Optics and Laser Technology</option>
+<option value="Simulation and Modeling">Simulation and Modeling</option>
+<option value="Sport Science Research and Technology">Sport Science Research and Technology</option>
+<option value="Web Information Systems and Technologies">Web Information Systems and Technologies</option>
+<a id="MasterPageHeader_SmallMenu_AdvSearchPaper" tabindex="1" class="otherButton filterByContextButton" href="AdvancedSearch.aspx?SearchCriteria=Papers" style="float: left; padding: 3px 14px;">Advanced Search Papers</a>
+<a onclick="return loadingClosePopUp(&#39;PaperSmallMenu&#39;);" id="MasterPageHeader_SmallMenu_PaperSearch" tabindex="1" class="defaultButton filterByContextButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MasterPageHeader$SmallMenu$PaperSearch&quot;, &quot;&quot;, true, &quot;PaperSmallMenu&quot;, &quot;&quot;, false, true))" style="float: none; padding: 6px 14px; margin-left: 166px;"><i class='icon-search'></i>Search</a>
+<span id="MasterPageHeader_SmallMenu_Label14">If you're looking for an exact phrase use quotation marks on text fields.</span>
+<span id="MasterPageHeader_SmallMenu_CustomValidatorAuthors" style="color:red;font-weight:bold;font-size:13px;margin-left:1px;visibility:hidden;">*Please fill out at least one Field.</span>
+<select name="ctl00$MasterPageHeader$SmallMenu$DropDownListAuthorsCountries" id="MasterPageHeader_SmallMenu_DropDownListAuthorsCountries" tabindex="1" style="height:27px;width:325px;border: 1px solid rgba(0, 0, 0, 0.4) !important;">
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Republic of the Congo">Republic of the Congo</option>
+<option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+<option value="Heard and McDonald Islands">Heard and McDonald Islands</option>
+<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+<option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+<option value="French Southern Territories">French Southern Territories</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+<option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+<option value="Virgin Islands, British">Virgin Islands, British</option>
+<option value="Virgin Islands, US">Virgin Islands, US</option>
+<option value="Wallis and Futuna Islands">Wallis and Futuna Islands</option>
+<select name="ctl00$MasterPageHeader$SmallMenu$DropDownListAuthors" id="MasterPageHeader_SmallMenu_DropDownListAuthors" tabindex="1" style="height:27px;width:325px;border: 1px solid rgba(0, 0, 0, 0.4) !important;">
+<option value="Computer Vision, Visualization and Computer Graphics">Computer Vision, Visualization and Computer Graphics</option>
+<option value="Data Engineering ">Data Engineering </option>
+<option value="Energy and Economy">Energy and Economy</option>
+<option value="Enterprise Information Systems">Enterprise Information Systems</option>
+<option value="Health Engineering and Technology Applications">Health Engineering and Technology Applications</option>
+<option value="Informatics in Control, Automation and Robotics">Informatics in Control, Automation and Robotics</option>
+<option value="Information and Systems Security">Information and Systems Security</option>
+<option value="Photonics, Optics and Laser Technology">Photonics, Optics and Laser Technology</option>
+<option value="Simulation and Modeling">Simulation and Modeling</option>
+<option value="Sport Science Research and Technology">Sport Science Research and Technology</option>
+<option value="Web Information Systems and Technologies">Web Information Systems and Technologies</option>
+<a id="MasterPageHeader_SmallMenu_AdvSearchAuthors" tabindex="1" class="otherButton filterByContextButton" href="AdvancedSearch.aspx?SearchCriteria=Authors" style="float: left; padding: 3px 14px;">Advanced Search Authors</a>
+<a onclick="return loadingClosePopUp(&#39;AuthorsSmallMenu&#39;);" id="MasterPageHeader_SmallMenu_AuthorsSearch" tabindex="1" class="defaultButton filterByContextButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MasterPageHeader$SmallMenu$AuthorsSearch&quot;, &quot;&quot;, true, &quot;AuthorsSmallMenu&quot;, &quot;&quot;, false, true))" style="float: none; padding: 6px 14px; margin-left: 155px;"><i class='icon-search'></i>Search</a>
+<span id="MasterPageHeader_SmallMenu_Label15">If you're looking for an exact phrase use quotation marks on text fields.</span>
+<span id="MasterPageHeader_SmallMenu_CustomValidatorAffiliation" style="color:red;font-weight:bold;font-size:13px;margin-left:1px;visibility:hidden;">*Please fill out at least one Field.</span>
+<select name="ctl00$MasterPageHeader$SmallMenu$DropDownListAffiliationCountry" id="MasterPageHeader_SmallMenu_DropDownListAffiliationCountry" tabindex="1" style="height:27px;width:325px;border: 1px solid rgba(0, 0, 0, 0.4) !important;">
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+
+================================================================================
+                               END OF RAW ARCHIVE                               
+================================================================================

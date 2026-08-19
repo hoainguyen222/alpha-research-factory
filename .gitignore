@@ -1,0 +1,22 @@
+.superpowers/
+node_modules/
+tmp/
+.docx_qa/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.Zone.Identifier
+
+# Secrets & Environment variables
+.env
+*.env
+*.key
+
+# Temporary artifacts & caches
+storage/academic_cache/
+alpha-repro-lite/cases/
+alpha-repro-lite/**/data/raw/
+alpha-repro-lite/**/data/processed/
+alpha-repro-lite/**/artifacts/

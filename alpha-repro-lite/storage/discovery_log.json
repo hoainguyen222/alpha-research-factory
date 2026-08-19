@@ -1,0 +1,62 @@
+[
+  {
+    "timestamp": "2026-08-18T15:04:16.429973",
+    "keywords": [
+      "Kalman filter pairs trading",
+      "order book imbalance high frequency",
+      "statistical arbitrage market microstructure"
+    ],
+    "papers_found": 0,
+    "papers_downloaded": 0
+  },
+  {
+    "timestamp": "2026-08-18T15:10:52.323197",
+    "keywords": [
+      "smart beta ETF construction",
+      "fractal analysis cryptocurrency market",
+      "LSTM neural network financial forecasting"
+    ],
+    "papers_found": 0,
+    "papers_downloaded": 0
+  },
+  {
+    "timestamp": "2026-08-18T15:55:36.002492",
+    "keywords": [
+      "tail risk hedging derivatives",
+      "Bayesian portfolio allocation",
+      "sentiment analysis crypto returns"
+    ],
+    "papers_found": 0,
+    "papers_downloaded": 0
+  },
+  {
+    "timestamp": "2026-08-18T15:56:27.844432",
+    "keywords": [
+      "machine learning stock prediction",
+      "options pricing volatility surface",
+      "factor model asset pricing empirical"
+    ],
+    "papers_found": 18,
+    "papers_downloaded": 7
+  },
+  {
+    "timestamp": "2026-08-18T16:05:47.224092",
+    "keywords": [
+      "mean reversion pairs trading equities",
+      "cross-sectional momentum anomaly",
+      "GARCH volatility modeling crypto"
+    ],
+    "papers_found": 18,
+    "papers_downloaded": 11
+  },
+  {
+    "timestamp": "2026-08-19T15:36:18.452389",
+    "keywords": [
+      "reinforcement learning algorithmic trading",
+      "quantitative trading strategy cryptocurrency",
+      "risk parity portfolio optimization"
+    ],
+    "papers_found": 16,
+    "papers_downloaded": 7
+  }
+]

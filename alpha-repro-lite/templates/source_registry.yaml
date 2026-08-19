@@ -1,0 +1,11 @@
+case_id:
+status: draft
+sources:
+  - source_id:
+    type:
+    role:
+    url:
+    local_path:
+    status:
+    notes:
+

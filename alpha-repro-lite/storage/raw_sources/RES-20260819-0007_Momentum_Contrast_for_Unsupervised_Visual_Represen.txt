@@ -1,0 +1,25 @@
+================================================================================
+                   AGENT RESEARCH UPDATE - RAW SOURCE ARCHIVE                   
+================================================================================
+ID:              RES-20260819-0007
+TITLE:           Momentum Contrast for Unsupervised Visual Representation Learning
+TYPE:            ACADEMIC_SEARCH
+SOURCE / URL:    https://doi.org/10.1109/cvpr42600.2020.00975
+INGESTION TIME:  2026-08-19 16:18:54
+WORD COUNT:      31 words
+CHARACTER COUNT: 271 characters
+EXTRACTION:      Academic Discovery Engine (OpenAlex)
+BYPASS STATUS:   Direct
+================================================================================
+RAW EXTRACTED DATA STREAM BELOW (FULL FIDELITY PRESERVATION):
+================================================================================
+
+Title: Momentum Contrast for Unsupervised Visual Representation Learning
+Authors: Kaiming He, Haoqi Fan, Yuxin Wu, Saining Xie, Ross Girshick
+Published: 2020
+Summary/Abstract: Cited by 12423 papers. Published in 2020.
+DOI/URL: https://doi.org/10.1109/cvpr42600.2020.00975
+
+================================================================================
+                               END OF RAW ARCHIVE                               
+================================================================================

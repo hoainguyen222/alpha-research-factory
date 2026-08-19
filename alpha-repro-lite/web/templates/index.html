@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Research Factory | Quant Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <header class="navbar">
+            <div class="logo-group">
+                <div class="logo-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                    <h1 class="logo-title">ALPHA RESEARCH <span class="badge-version">FACTORY</span></h1>
+                    <p class="logo-sub">Quant Leaderboard • Paper Vault • Spider Control • AI Analytics</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="server-status">
+                    <span class="pulse-dot"></span>
+                    <span>Dashboard: <strong>127.0.0.1:{{ port }}</strong></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Metric Cards -->
+        <div class="metrics-grid" style="grid-template-columns: repeat(5, 1fr);">
+            <div class="metric-card">
+                <div class="metric-icon purple"><i class="fa-solid fa-trophy"></i></div>
+                <div class="metric-content">
+                    <span class="metric-label">Chiến Lược Backtest</span>
+                    <h3 class="metric-val" id="statStrategies">{{ quant_stats.total_strategies }}</h3>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon green"><i class="fa-solid fa-chart-area"></i></div>
+                <div class="metric-content">
+                    <span class="metric-label">Sharpe Trung Bình</span>
+                    <h3 class="metric-val" id="statSharpe">{{ quant_stats.avg_sharpe }}</h3>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon cyan"><i class="fa-solid fa-database"></i></div>
+                <div class="metric-content">
+                    <span class="metric-label">Tài Liệu Trong Vault</span>
+                    <h3 class="metric-val" id="statVault">{{ vault_stats.total_entries }}</h3>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon orange"><i class="fa-solid fa-spider"></i></div>
+                <div class="metric-content">
+                    <span class="metric-label">Paper Đã Quét</span>
+                    <h3 class="metric-val" id="statScraped">{{ quant_stats.scraped_papers }}</h3>
+                </div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-icon purple" style="background: rgba(236,72,153,0.15); color: #f472b6;"><i class="fa-solid fa-brain"></i></div>
+                <div class="metric-content">
+                    <span class="metric-label">Luật Đã Học (Rules)</span>
+                    <h3 class="metric-val" id="statRules">{{ rule_stats.total_rules }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="leaderboard"><i class="fa-solid fa-ranking-star"></i> Leaderboard</button>
+            <button class="tab-btn" data-tab="vault"><i class="fa-solid fa-book-open"></i> Paper Vault</button>
+            <button class="tab-btn" data-tab="components"><i class="fa-solid fa-code"></i> Strategy Components</button>
+            <button class="tab-btn" data-tab="rules"><i class="fa-solid fa-brain"></i> Learned Rules & Templates</button>
+            <button class="tab-btn" data-tab="spider"><i class="fa-solid fa-robot"></i> Spider & AI</button>
+            <button class="tab-btn" data-tab="upload"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</button>
+        </div>
+
+        <!-- Tab: Leaderboard -->
+        <div class="tab-content active" id="tab-leaderboard">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-ranking-star"></i> Strategy Leaderboard</h2>
+                    <button class="btn btn-primary btn-sm" onclick="loadLeaderboard()"><i class="fa-solid fa-rotate"></i> Refresh</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="leaderboardTable">
+                        <thead>
+                            <tr>
+                                <th>#</th><th>Paper ID</th><th>Target</th><th>Sharpe</th>
+                                <th>Sortino</th><th>Calmar</th><th>PF</th><th>Win Rate</th>
+                                <th>Return</th><th>Max DD</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboardBody"><tr><td colspan="10" class="empty-state">Loading...</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Vault -->
+        <div class="tab-content" id="tab-vault">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-book-open"></i> Research Paper Vault</h2>
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="vaultSearchInput" placeholder="Tìm kiếm FTS5 theo ID hoặc từ khóa..." onkeyup="if(event.key==='Enter')searchVault()">
+                        <button class="btn btn-primary btn-sm" onclick="searchVault()">Search</button>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="vaultTable">
+                        <thead><tr><th>ID</th><th>Title</th><th>Type</th><th>Date</th><th>Actions</th></tr></thead>
+                        <tbody id="vaultBody"><tr><td colspan="5" class="empty-state">Kho lưu trữ đang trống. Hãy upload tài liệu hoặc dùng Spider để tải bài báo mới.</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Strategy Components (Code & Formulas) -->
+        <div class="tab-content" id="tab-components">
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h2><i class="fa-solid fa-puzzle-piece"></i> Extracted Strategy Components Store</h2>
+                        <p style="font-size:12px;color:var(--text-muted);margin-top:4px">Kho lưu trữ tách biệt Code (Python/C++), Công thức toán (LaTeX), Tín hiệu Mua/Bán và Tham số định lượng.</p>
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="loadComponents()"><i class="fa-solid fa-rotate"></i> Refresh</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="componentsTable">
+                        <thead>
+                            <tr>
+                                <th>Component ID</th>
+                                <th>Chiến Lược & Vault ID</th>
+                                <th>Họ Mô Hình</th>
+                                <th>Code Snippet Cốt Lõi</th>
+                                <th>Quy Tắc & Tham Số</th>
+                                <th>Kiểm Định</th>
+                            </tr>
+                        </thead>
+                        <tbody id="componentsBody">
+                            <tr><td colspan="6" class="empty-state">Đang tải kho thành phần chiến lược...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Learned Rules & Templates Memory -->
+        <div class="tab-content" id="tab-rules">
+            <div class="panel" style="margin-bottom: 24px;">
+                <div class="panel-header">
+                    <div>
+                        <h2><i class="fa-solid fa-brain"></i> 1. Learned Strategy Rules (Bộ Nhớ Quy Tắc AI)</h2>
+                        <p style="font-size:12px;color:var(--text-muted);margin-top:4px">Bộ nhớ tri thức máy học tự động tích lũy từ các bài báo đã phân tích thành công (Fast 0-second matching).</p>
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="loadRules()"><i class="fa-solid fa-rotate"></i> Refresh</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="rulesTable">
+                        <thead>
+                            <tr>
+                                <th>Rule ID</th>
+                                <th>Tên Luật / Mẫu Hình</th>
+                                <th>Trigger Keywords</th>
+                                <th>Mô Hình & Tham Số Đã Khóa</th>
+                                <th>Độ Tin Cậy</th>
+                                <th>Hits</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rulesBody">
+                            <tr><td colspan="6" class="empty-state">Đang tải bộ nhớ luật...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <h2><i class="fa-solid fa-file-code"></i> 2. Crawler Site Templates (Mẫu Bóc Tách Web Tự Học)</h2>
+                        <p style="font-size:12px;color:var(--text-muted);margin-top:4px">Công thức bóc tách CSS Selectors của từng trang web (Substack, Medium, SSRN, arXiv...). Bóc tách trong 0.002s.</p>
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="loadTemplates()"><i class="fa-solid fa-rotate"></i> Refresh</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="data-table" id="templatesTable">
+                        <thead>
+                            <tr>
+                                <th>Template ID</th>
+                                <th>Domain Pattern</th>
+                                <th>Loại CMS</th>
+                                <th>Title & Content Selectors</th>
+                                <th>Noise Selectors</th>
+                                <th>Hits</th>
+                            </tr>
+                        </thead>
+                        <tbody id="templatesBody">
+                            <tr><td colspan="6" class="empty-state">Đang tải danh sách templates...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Spider & AI Control -->
+        <div class="tab-content" id="tab-spider">
+            <div class="panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-robot"></i> Spider & Alpha Factory Control</h2>
+                </div>
+                <div class="control-grid">
+                    <!-- Scheduler Settings Card -->
+                    <div class="control-card full-width">
+                        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                            <h3><i class="fa-solid fa-clock"></i> Lập Lịch Tự Động Hàng Ngày</h3>
+                            <span id="schedulerStatusBadge" class="badge" style="background:rgba(52,211,153,0.15);color:var(--accent-green);font-size:12px">
+                                <i class="fa-solid fa-circle-dot"></i> Đang Chạy Tự Động
+                            </span>
+                        </div>
+                        <p style="margin-bottom:14px">Hệ thống kết nối trực tiếp đồng hồ hệ điều hành: Tự động chạy đúng giờ mỗi ngày (hoặc tự động chạy bù ngay khi mở máy nếu lúc đến giờ máy đang tắt).</p>
+                        
+                        <div style="background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:8px;margin-bottom:16px;font-size:12px;display:flex;gap:20px;flex-wrap:wrap">
+                            <div><span style="color:var(--text-muted)">Lần chạy gần nhất:</span> <strong id="lastRunInfo" style="color:var(--accent-cyan)">Đang tải...</strong></div>
+                            <div><span style="color:var(--text-muted)">Giới hạn:</span> <strong style="color:var(--accent-purple)">Tối đa 1 lần / ngày (Bảo vệ Token)</strong></div>
+                        </div>
+
+                        <div class="settings-row">
+                            <div class="setting-item">
+                                <label class="setting-label">Chế Độ Thu Thập</label>
+                                <div class="toggle-wrapper">
+                                    <span class="toggle-label-text" id="toggleLabelText">Thu thập Link cố định</span>
+                                    <label class="toggle-switch">
+                                        <input type="checkbox" id="modeToggle" onchange="toggleMode()">
+                                        <span class="toggle-slider"></span>
+                                    </label>
+                                </div>
+                                <p class="setting-hint" id="modeHint">Spider sẽ quét các nguồn web đã cấu hình sẵn (arXiv, SSRN, Quantocracy).</p>
+                            </div>
+                            <div class="setting-item">
+                                <label class="setting-label">Khung Giờ Chạy Hàng Ngày</label>
+                                <div style="display:flex;align-items:center;gap:10px">
+                                    <input type="time" id="scheduleTime" value="02:00" class="time-picker">
+                                    <button class="btn btn-primary btn-sm" onclick="saveSettings()"><i class="fa-solid fa-floppy-disk"></i> Lưu</button>
+                                </div>
+                                <p class="setting-hint">Scheduler sẽ tự động kích hoạt pipeline vào giờ này mỗi ngày.</p>
+                            </div>
+                        </div>
+                        <div class="btn-group" style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
+                            <button class="btn btn-accent" onclick="runSchedulerNow()"><i class="fa-solid fa-bolt"></i> Chạy Pipeline Ngay</button>
+                        </div>
+                    </div>
+
+                    <!-- Manual Controls -->
+                    <div class="control-card">
+                        <h3><i class="fa-solid fa-spider"></i> Web Spider (Thủ Công)</h3>
+                        <p>Bấm để quét Link cố định ngay lập tức.</p>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary" onclick="runSpider(true)"><i class="fa-solid fa-eye"></i> Dry Run</button>
+                            <button class="btn btn-primary" onclick="runSpider(false)"><i class="fa-solid fa-play"></i> Scrape</button>
+                        </div>
+                    </div>
+                    <div class="control-card">
+                        <h3><i class="fa-solid fa-brain"></i> Alpha Factory (Thủ Công)</h3>
+                        <p>Phân tích bài báo trong inbox/ và chạy Backtest.</p>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary" onclick="runAlpha(false)"><i class="fa-solid fa-play"></i> Semantic</button>
+                            <button class="btn btn-accent" onclick="runAlpha(true)"><i class="fa-solid fa-wand-magic-sparkles"></i> AI</button>
+                        </div>
+                    </div>
+
+                    <!-- Keyword Discovery -->
+                    <div class="control-card full-width">
+                        <h3><i class="fa-solid fa-globe"></i> Khám Phá Internet (Keyword Discovery)</h3>
+                        <p>Nhập từ khóa để tìm kiếm tài liệu chiến lược từ arXiv, CrossRef, OpenAlex.</p>
+                        <div class="search-box" style="margin-top: 10px;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="keywordDiscoveryInput" placeholder="Ví dụ: Mean Reversion, Momentum..." onkeyup="if(event.key==='Enter')runKeywordDiscovery()">
+                            <button class="btn btn-primary btn-sm" onclick="runKeywordDiscovery()"><i class="fa-solid fa-rocket"></i> Cào Dữ Liệu</button>
+                        </div>
+                    </div>
+
+                    <!-- Execution Log -->
+                    <div class="control-card full-width">
+                        <h3><i class="fa-solid fa-terminal"></i> Execution Log</h3>
+                        <pre class="log-output" id="executionLog">Chờ thực thi lệnh...</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Upload -->
+        <div class="tab-content" id="tab-upload">
+            <div class="panel">
+                <div class="panel-header"><h2><i class="fa-solid fa-cloud-arrow-up"></i> Upload Paper / File</h2></div>
+                <div class="upload-zone" id="uploadZone">
+                    <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                    <p class="upload-text">Kéo thả file vào đây hoặc <strong>click để chọn file</strong></p>
+                    <p class="upload-sub">Hỗ trợ: PDF, DOCX, XLSX, CSV, TXT, PNG, JPG</p>
+                    <input type="file" id="fileInput" hidden accept=".pdf,.docx,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.webp,.json,.md">
+                </div>
+                <div id="uploadResult" class="upload-result" style="display:none"></div>
+                <div class="panel-header" style="margin-top:24px">
+                    <h3><i class="fa-solid fa-inbox"></i> Inbox Files</h3>
+                    <button class="btn btn-secondary btn-sm" onclick="loadInbox()"><i class="fa-solid fa-rotate"></i></button>
+                </div>
+                <div id="inboxList" class="inbox-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paper Vault Reader Modal -->
+    <div class="modal-overlay" id="vaultModal" onclick="if(event.target===this)closeVaultModal()">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-badge" id="modalTypeBadge">PAPER</span>
+                    <h2 class="modal-title" id="modalTitle">Tiêu đề tài liệu</h2>
+                    <div class="modal-meta">
+                        <span id="modalId">ID: RES-00000000-0000</span> • 
+                        <span id="modalDate">2026-08-14</span> • 
+                        <span id="modalWeb">Source</span>
+                    </div>
+                </div>
+                <button class="modal-close-btn" onclick="closeVaultModal()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-tabs">
+                <button class="modal-tab-btn active" data-modal-tab="summary" onclick="switchModalTab('summary')">
+                    <i class="fa-solid fa-sparkles"></i> 1. Tóm Tắt & Key Insights
+                </button>
+                <button class="modal-tab-btn" data-modal-tab="raw" onclick="switchModalTab('raw')">
+                    <i class="fa-solid fa-file-lines"></i> 2. Toàn Văn Văn Bản Gốc (Raw Text)
+                </button>
+                <button class="modal-tab-btn" data-modal-tab="meta" onclick="switchModalTab('meta')">
+                    <i class="fa-solid fa-code"></i> 3. Metadata & Thuộc Tính
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tab-content active" id="modalTab-summary">
+                    <div class="summary-view" id="modalSummaryContent">Đang tải...</div>
+                </div>
+                <div class="modal-tab-content" id="modalTab-raw">
+                    <div class="raw-actions-bar">
+                        <span class="raw-info" id="modalRawWordCount">0 từ • 0 ký tự</span>
+                        <button class="btn btn-secondary btn-sm" onclick="copyRawText()"><i class="fa-solid fa-copy"></i> Sao chép Text</button>
+                    </div>
+                    <pre class="raw-text-view" id="modalRawContent">Đang tải toàn văn văn bản gốc...</pre>
+                </div>
+                <div class="modal-tab-content" id="modalTab-meta">
+                    <pre class="raw-text-view" id="modalMetaContent">{}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

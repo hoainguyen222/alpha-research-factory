@@ -1,0 +1,22 @@
+================================================================================
+                   AGENT RESEARCH UPDATE - RAW SOURCE ARCHIVE                   
+================================================================================
+ID:              RES-20260818-0023
+TITLE:           Image Document: IMG_20260721_183931
+TYPE:            IMAGE
+SOURCE / URL:    FILE:IMG_20260721_183931.jpg
+INGESTION TIME:  2026-08-18 17:11:16
+WORD COUNT:      2 words
+CHARACTER COUNT: 9 characters
+EXTRACTION:      RapidOCR ONNX Engine
+BYPASS STATUS:   Enhanced (LANCZOS + AutoContrast + Neural OCR)
+================================================================================
+RAW EXTRACTED DATA STREAM BELOW (FULL FIDELITY PRESERVATION):
+================================================================================
+
+LAN
+AMLET
+
+================================================================================
+                               END OF RAW ARCHIVE                               
+================================================================================

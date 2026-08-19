@@ -1,0 +1,21 @@
+================================================================================
+                   AGENT RESEARCH UPDATE - RAW SOURCE ARCHIVE                   
+================================================================================
+ID:              RES-20260818-0014
+TITLE:           Are You suprised ?
+TYPE:            FILE_PDF
+SOURCE / URL:    FILE:Illiquidity and stock returns cross-section and time-series effects.pdf
+INGESTION TIME:  2026-08-18 16:05:34
+WORD COUNT:      0 words
+CHARACTER COUNT: 0 characters
+EXTRACTION:      PyPDF + Academic De-Noiser
+BYPASS STATUS:   Direct (Not Encrypted)
+================================================================================
+RAW EXTRACTED DATA STREAM BELOW (FULL FIDELITY PRESERVATION):
+================================================================================
+
+[EMPTY / NO CONTENT EXTRACTED]
+
+================================================================================
+                               END OF RAW ARCHIVE                               
+================================================================================

@@ -1,0 +1,15 @@
+case_id:
+status: draft
+universe: []
+timeframe:
+  start:
+  end:
+bar_interval:
+fees:
+  maker:
+  taker:
+slippage:
+funding:
+benchmark:
+notes: []
+

@@ -1,0 +1,23 @@
+# Web & RSS Registry for Autonomous Alpha Research Machine
+sources:
+  - name: "arXiv Quantitative Finance (q-fin)"
+    url: "https://export.arxiv.org/rss/q-fin"
+    type: "rss"
+    enabled: true
+  - name: "SSRN Quantitative Finance (Latest Papers)"
+    url: "https://papers.ssrn.com/sol3/JELJOUR_Results.cfm?form_name=journalBrowse&journal_id=2966528"
+    type: "html_scrape"
+    enabled: true
+  - name: "Quantocracy Alpha Blog Roll"
+    url: "https://quantocracy.com/feed/"
+    type: "rss"
+    enabled: true
+  - name: "Journal of Financial Economics (ScienceDirect RSS)"
+    url: "https://rss.sciencedirect.com/publication/science/0304405X"
+    type: "rss"
+    enabled: true
+
+watchdog:
+  check_interval_hours: 24
+  download_dir: "inbox/"
+  min_feasibility_score: 70

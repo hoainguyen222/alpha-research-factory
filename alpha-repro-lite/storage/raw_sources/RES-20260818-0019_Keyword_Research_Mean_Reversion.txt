@@ -1,0 +1,123 @@
+================================================================================
+                   AGENT RESEARCH UPDATE - RAW SOURCE ARCHIVE                   
+================================================================================
+ID:              RES-20260818-0019
+TITLE:           Keyword Research: Mean Reversion
+TYPE:            KEYWORD_SEARCH
+SOURCE / URL:    QUERY:Mean Reversion
+INGESTION TIME:  2026-08-18 16:23:22
+WORD COUNT:      1,313 words
+CHARACTER COUNT: 9,876 characters
+EXTRACTION:      Multi-Engine Academic Discovery Agent
+BYPASS STATUS:   Direct
+================================================================================
+RAW EXTRACTED DATA STREAM BELOW (FULL FIDELITY PRESERVATION):
+================================================================================
+
+# KEYWORD RESEARCH DISCOVERY: "Mean Reversion"
+**Total Papers Discovered:** 12 across arXiv, OpenAlex, CrossRef.
+
+### 1. [arXiv] Optimal Trading of Microstructure Mean Reversion
+- **Authors:** Lucas Rabechini Amaral
+- **Published:** 2026-08-01
+- **Link / DOI:** http://arxiv.org/abs/2608.00885v1
+- **Direct PDF / OA Link:** https://arxiv.org/pdf/2608.00885v1
+- **Abstract / Summary:** At the scale of seconds the observed mid carries a stationary, mean-reverting error around a latent efficient price. We build an order book whose own flow produces that error and solve for the trading rule that maximises the long-run average profit rate net of the bid-ask spread. In a liquid large-tick asset the spread is one tick or two, and it is exactly the parity of the mid on the half-tick grid: tight at a half-integer, open at an integer. One coordinate therefore carries the problem: the gap $G$ between the mid and the efficient price; the price is an exogenous Brownian martingale, and $G$ is observable. The mid is a pure jump process whose move intensities lean toward the efficient price. Under one balanced-response condition, which equalises the book's corrective drift across parities, mean reversion of $G$ is a theorem: its conditional mean and stationary covariance are exactly those of an Ornstein-Uhlenbeck process with reversion rate $α$ and stationary standard deviation $s_G$. Its paths are not: the mid jumps. Passage times are therefore evaluated on the Gaussian diffusion those two moments define, at an error we bound on the reward side and leave heuristic on the timing side. A symmetric band of half-width $θ$ buys when the gap reaches $-θ$, sells at $+θ$, and holds inside; on the surrogate it is optimal among all admissible strategies, on the jump process itself that reduction remains a conjecture. With $φ$ the tight-book half-spread, the optimal half-width and its profit rate are $θ^*(θ^*-φ)=s_G^2$ and $R^*=αs_G\sqrt{2/π}\,e^{-θ^{*2}/2s_G^2}$. Threshold times margin equals the stationary variance of the gap. Trading as soon as the gap covers the spread earns zero: all profit is the option value of waiting.
+
+---
+
+### 2. [arXiv] Manipulation, Informed Trading, and Regulation in Leveraged Event-Linked Markets
+- **Authors:** Maksym Nechepurenko
+- **Published:** 2026-05-11
+- **Link / DOI:** http://arxiv.org/abs/2605.10486v2
+- **Direct PDF / OA Link:** https://arxiv.org/pdf/2605.10486v2
+- **Abstract / Summary:** Leverage does not create manipulation or informed trading in event markets, but it changes their economics. We separate four conduct channels: market-price manipulation, real-world outcome manipulation, resolution-process manipulation, and informed trading that exploits non-public information without changing the event or resolution rule. A capital-constrained amplification model shows that gross directional gains scale with financed exposure while information, influence, concealment, execution, and enforcement costs need not scale proportionally. Leverage therefore weakly enlarges profitable influence opportunities under fixed-cost conditions, but endogenous price impact, convex detection costs, or enforceable position limits can reverse the result. We connect this model to the revised non-portability, taxonomy, and fill-side evidence of the companion papers. Historical-path replay identifies mechanical rule channels, not equilibrium conduct; fill-side address data support concentration analysis but not address-level spoofing or quote-withdrawal claims. The regulatory contribution is a functions-first framework covering product authorization, market-integrity surveillance, event-influence controls, resolution governance, and loss-bearing capital. A July 2026 source snapshot indicates an evolving United States framework and no harmonized cross-jurisdictional category for leveraged event contracts. Legal status remains product- and jurisdiction-specific.
+
+---
+
+### 3. [arXiv] Research Streams in Biodiversity Finance: A Bibliometric Analysis and Research Agenda
+- **Authors:** Lennart Ante, Friedrich-Philipp Wazinski, Aman Saggu
+- **Published:** 2026-04-23
+- **Link / DOI:** http://arxiv.org/abs/2604.21569v1
+- **Direct PDF / OA Link:** https://arxiv.org/pdf/2604.21569v1
+- **Abstract / Summary:** Biodiversity loss is accelerating at an unprecedented pace, threatening ecosystem stability, economic resilience, and human well-being, with billions required to reverse current trends. Against this backdrop, biodiversity finance has emerged as a rapidly expanding but highly fragmented field spanning ecology, economics, finance, accounting, and policy. However, it remains emerging and complex, with the majority of relevant knowledge being produced in non-finance journals. This study employs quantitative bibliometric analysis to examine a corpus of 189,456 references underlying 3,998 articles related to biodiversity and finance. The analysis identifies eight primary research streams within the field that concern (1) strategic and financial approaches in global biodiversity conservation, (2) the impact and implementation of payments for environmental services (PES) in developing countries, (3) neoliberal influences and implications in environmental conservation, (4) biodiversity offsets and conservation, (5) ecosystem services and biodiversity, (6) integrating conservation and community interests in biodiversity management, (7) balancing agricultural intensification with biodiversity conservation, and (8) global and corporate biodiversity reporting. The characteristics of each research stream and its prevalent publications are outlined, alongside an analysis of their temporal evolution and the degree of information exchange among the research streams. The findings provide a structured map of the intellectual architecture of biodiversity finance, document pronounced silos between economically-oriented and critical/political-economy research streams, and translate these patterns into a focused research agenda and implications for policymakers, financial institutions, and corporate actors.
+
+---
+
+### 4. [arXiv] Trading multiple mean reversion
+- **Authors:** E. Boguslavskaya, M. Boguslavsky, D. Muravey
+- **Published:** 2020-09-21
+- **Link / DOI:** http://arxiv.org/abs/2009.09816v1
+- **Direct PDF / OA Link:** https://arxiv.org/pdf/2009.09816v1
+- **Abstract / Summary:** How should one construct a portfolio from multiple mean-reverting assets? Should one add an asset to portfolio even if the asset has zero mean reversion? We consider a position management problem for an agent trading multiple mean-reverting assets. We solve an optimal control problem for an agent with power utility, and present a semi-explicit solution. The nearly explicit nature of the solution allows us to study the effects of parameter mis-specification, and derive a number of properties of the optimal solution.
+
+---
+
+### 5. [OpenAlex] Mean reversion in stock prices
+- **Authors:** James M. Poterba, Lawrence H. Summers
+- **Published:** 1988
+- **Link / DOI:** https://doi.org/10.1016/0304-405x(88)90021-9
+- **Abstract / Summary:** Cited by 1903 papers. Published in 1988.
+
+---
+
+### 6. [OpenAlex] Mean Reversion in Stock Prices
+- **Authors:** James M. Poterba, Larry Summers
+- **Published:** 1996
+- **Link / DOI:** https://doi.org/10.3886/icpsr01029.v1
+- **Abstract / Summary:** Cited by 1089 papers. Published in 1996.
+
+---
+
+### 7. [OpenAlex] Nonlinear Mean‐Reversion in Real Exchange Rates: Toward a Solution To the Purchasing Power Parity Puzzles
+- **Authors:** Mark P. Taylor, David Peel, Lucio Sarno
+- **Published:** 2001
+- **Link / DOI:** https://doi.org/10.1111/1468-2354.00144
+- **Abstract / Summary:** Cited by 1020 papers. Published in 2001.
+
+---
+
+### 8. [OpenAlex] Mean Reversion in Stock Prices: Evidence and Implications
+- **Authors:** James M. Poterba, Lawrence H. Summers
+- **Published:** 1987
+- **Link / DOI:** https://doi.org/10.3386/w2343
+- **Direct PDF / OA Link:** https://doi.org/10.3386/w2343
+- **Abstract / Summary:** Cited by 415 papers. Published in 1987.
+
+---
+
+### 9. [CrossRef] Mean-Reversion Risk APT and the Mean-Reversion Risk CAPM
+- **Authors:** C. Kenneth Jones
+- **Link / DOI:** https://doi.org/10.2139/ssrn.4402402
+- **Direct PDF / OA Link:** https://doi.org/10.2139/ssrn.4402402
+- **Abstract / Summary:** <jats:p>&lt;p&gt;&lt;span&gt;Time horizon mean-reversion dimensions are added to asset pricing theory. Mean-reversion risk arbitrage pricing theory (A-APT) is static and describes single-period risk in the frequency domain with long-horizon contributions. Mean-reversion risks are variances of returns for multiple horizons. The Fourier transform converts finite-length returns into a finite number o
+
+---
+
+### 10. [CrossRef] Mean Reversion
+- **Link / DOI:** https://doi.org/10.1007/springerreference_1949
+- **Direct PDF / OA Link:** https://doi.org/10.1007/springerreference_1949
+- **Abstract / Summary:** Abstract available via DOI.
+
+---
+
+### 11. [CrossRef] Random Walk and Mean-Reversion
+- **Authors:** Christian Gollier
+- **Link / DOI:** https://doi.org/10.23943/princeton/9780691148762.003.0004
+- **Direct PDF / OA Link:** https://doi.org/10.23943/princeton/9780691148762.003.0004
+- **Abstract / Summary:** <p>
+                    This chapter illustrates that the shape of the term structure of discount rates is determined by the way the wealth effect and the precautionary effects evolve with the time horizon. When the growth rate of consumption is constant, then consumption increases exponentially, and the intertemporal rate of substitution, which is the discount factor, decreases exponentially. Thi
+
+---
+
+### 12. [CrossRef] Futures Trading Under Mean Reversion
+- **Link / DOI:** https://doi.org/10.1142/9789814725927_0005
+- **Direct PDF / OA Link:** https://doi.org/10.1142/9789814725927_0005
+- **Abstract / Summary:** Abstract available via DOI.
+
+---
+
+
+================================================================================
+                               END OF RAW ARCHIVE                               
+================================================================================
